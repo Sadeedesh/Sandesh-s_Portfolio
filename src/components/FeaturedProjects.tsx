@@ -6,10 +6,10 @@ import cinnemixImg from '../assets/cinnemix.png';
 import tourismImg from '../assets/tourism.png';
 
 const projects = [
-  { title: 'MathsCapital',           desc: 'A high-performance financial analysis tool designed for mathematical modelling and predictive market analytics.',   tags: ['React.js', 'Tailwind CSS', 'Vite'],   img: mathscapitalImg },
-  { title: 'Sadeedeeh Beach Resort', desc: 'A luxury hospitality management system featuring booking integrations and automated guest services.',               tags: ['React.js', 'Tailwind CSS', 'Vite'], img: sadeedeshImg },
-  { title: 'Cinnamix Export',        desc: 'Inventory management and export tracking platform tailored for the global spice trade market.',                     tags: ['React.js', 'Tailwind CSS', 'Vite'],    img: cinnemixImg },
-  { title: 'Sri Lankan Tourism',        desc: 'An interactive guide exploring the rich heritage and natural beauty of Sri Lanka through digital storytelling.', tags: ['JAVASCRIPT','Html','CSS'],    img: tourismImg },
+  { title: 'MathsCapital',           desc: 'A high-performance financial analysis tool designed for mathematical modelling and predictive market analytics.',   tags: ['React.js', 'Tailwind CSS', 'Vite'],   img: mathscapitalImg, code: 'https://github.com/Sadeedesh/Maths-Capital',           demo: 'https://maths-capital.netlify.app/' },
+  { title: 'Sadeedeeh Beach Resort', desc: 'A luxury hospitality management system featuring booking integrations and automated guest services.',               tags: ['React.js', 'Tailwind CSS', 'Vite'],   img: sadeedeshImg,    code: 'https://github.com/Sadeedesh/Sadeedesh-Beach-Resort',  demo: 'https://sadeedesh-beach-resort.netlify.app/' },
+  { title: 'Cinnamix Export',        desc: 'Inventory management and export tracking platform tailored for the global spice trade market.',                     tags: ['React.js', 'Tailwind CSS', 'Vite'],   img: cinnemixImg,     code: 'https://github.com/Sadeedesh/CinnemixExport',         demo: 'https://cinnamix-export.netlify.app/' },
+  { title: 'Sri Lankan Tourism',     desc: 'An interactive guide exploring the rich heritage and natural beauty of Sri Lanka through digital storytelling.',    tags: ['JAVASCRIPT','Html','CSS'],             img: tourismImg,      code: 'https://github.com/Sadeedesh/Sri_Lanka_Tourism',      demo: 'https://shimmering-naiad-c62982.netlify.app/' },
 ];
 
 const research = [
@@ -43,8 +43,8 @@ export default function FeaturedProjects() {
                   {p.tags.map((t, j) => <span key={j} className="proj-tag">{t}</span>)}
                 </div>
                 <div className="proj-actions">
-                  <button className="proj-btn">⌥ View Code</button>
-                  <button className="proj-btn">↗ Live Demo</button>
+                  <a href={p.code} target="_blank" rel="noreferrer" className="proj-btn">⌥ View Code</a>
+                  <a href={p.demo} target="_blank" rel="noreferrer" className="proj-btn">↗ Live Demo</a>
                 </div>
               </div>
             </div>

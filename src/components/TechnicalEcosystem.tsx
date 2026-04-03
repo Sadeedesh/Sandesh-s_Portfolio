@@ -7,7 +7,7 @@ const cats = [
     icon: '</>',
     label: 'Languages',
     items: [
-      { name: 'Python',     level: 100 },
+      { name: 'Python',     level: 80 },
       { name: 'JavaScript', level: 88 },
       { name: 'TypeScript', level: 80 },
       { name: 'Go',         level: 65 },
@@ -23,8 +23,8 @@ const cats = [
     icon: '◈',
     label: 'Frameworks & Platforms',
     items: [
-      { name: 'React.js',     level: 88 },
-      { name: 'Tailwind CSS', level: 90 },
+      { name: 'React.js',     level: 80 },
+      { name: 'Tailwind CSS', level: 85 },
       { name: 'Vite',         level: 80 },
       { name: 'Node.js',      level: 75 },
     ],
