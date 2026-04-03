@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #0a0f14;
+  --bg-2:      #0e1419;
+  --bg-3:      #12171d;
+  --bg-4:      #1a2027;
+  --bg-5:      #252d36;
+  --primary:   #69daff;
+  --primary-2: #00cffc;
+  --text:      #e1e3e6;
+  --text-2:    #c1c6cd;
+  --text-3:    #7a8390;
+  --border:    rgba(255,255,255,0.06);
+  --font-h:    'Space Grotesk', sans-serif;
+  --font-b:    'Inter', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-b);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+#root { width: 100%; zoom: 0.9; }
+
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
