@@ -6,15 +6,15 @@ import cinnemixImg from '../assets/cinnemix.png';
 import tourismImg from '../assets/tourism.png';
 
 const projects = [
-  { title: 'MathsCapital',           desc: 'A high-performance financial analysis tool designed for mathematical modelling and predictive market analytics.',   tags: ['REACT','PYTHON'],   img: mathscapitalImg },
-  { title: 'Sadeedeeh Beach Resort', desc: 'A luxury hospitality management system featuring booking integrations and automated guest services.',               tags: ['FULL-STACK','NTS'], img: sadeedeshImg },
-  { title: 'Cinnamix Export',        desc: 'Inventory management and export tracking platform tailored for the global spice trade market.',                     tags: ['NODE.JS','SQL'],    img: cinnemixImg },
+  { title: 'MathsCapital',           desc: 'A high-performance financial analysis tool designed for mathematical modelling and predictive market analytics.',   tags: ['React.js', 'Tailwind CSS', 'Vite'],   img: mathscapitalImg },
+  { title: 'Sadeedeeh Beach Resort', desc: 'A luxury hospitality management system featuring booking integrations and automated guest services.',               tags: ['React.js', 'Tailwind CSS', 'Vite'], img: sadeedeshImg },
+  { title: 'Cinnamix Export',        desc: 'Inventory management and export tracking platform tailored for the global spice trade market.',                     tags: ['React.js', 'Tailwind CSS', 'Vite'],    img: cinnemixImg },
   { title: 'Sri Lankan Tourism',        desc: 'An interactive guide exploring the rich heritage and natural beauty of Sri Lanka through digital storytelling.', tags: ['JAVASCRIPT','Html','CSS'],    img: tourismImg },
 ];
 
 const research = [
-  { category: 'RESEARCH FOCUS', title: 'Sentiment Analysis & Data Mining', desc: 'Advanced analytical models to extract meaningful patterns from unstructured textual data and market sentiment trends.', tags: ['MACHINE LEARNING','NLP','PYTHON'], chart: true },
-  { category: '',               title: 'Sri Lankan Tourism',               desc: 'An interactive guide exploring the rich heritage and natural beauty of Sri Lanka through digital storytelling.',          tags: ['JAVASCRIPT','GSAP'],             chart: false },
+  { category: 'RESEARCH FOCUS', title: 'Sentiment Analysis & Data Mining', desc: 'Advanced analytical models to extract meaningful patterns from unstructured textual data and market sentiment trends.', tags: ['MACHINE LEARNING','PowerShell','JupyterNotebook','CSS','HTML','PYTHON'], chart: true },
+  { category: 'MACHINE LEARNING',               title: 'Data_mining_student_performance',               desc: 'Data_mining_student_performance data preprocessing',          tags: ['JupyterNotebook','PYTHON','HTML','CSS'],             chart: true },
 ];
 
 const bars = [4,7,5,9,6,8,5,7];

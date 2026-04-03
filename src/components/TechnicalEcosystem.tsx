@@ -14,12 +14,14 @@ const cats = [
       { name: 'HTML/CSS',   level: 95 },
       { name: 'SQL',        level: 75 },
       { name: 'JAVA',        level: 85 },
+      { name: 'PHP', level: 70 },
+
 
     ],
   },
   {
     icon: '◈',
-    label: 'Frameworks',
+    label: 'Frameworks & Platforms',
     items: [
       { name: 'React.js',     level: 88 },
       { name: 'Tailwind CSS', level: 90 },
@@ -31,9 +33,14 @@ const cats = [
     icon: '⚙',
     label: 'Tools',
     items: [
-      { name: 'Git & Github',   level: 90 },
+      { name: 'Git & GitHub',   level: 90 },
       { name: 'GitHub Actions', level: 70 },
       { name: 'Docker',         level: 60 },
+      { name: 'Jupyter Notebook', level: 85 },
+      { name: 'PowerShell',     level: 80 },
+      { name: 'Figma',          level: 70 },
+      { name: 'VS Code',        level: 90 },
+
     ],
   },
   {
@@ -44,7 +51,7 @@ const cats = [
       { name: 'RESTful APIs',     level: 85 },
       { name: 'Data Mining',      level: 80 },
       { name: 'Cloud Architecture', level: 65 },
-      { name: 'CICD Pipelines',   level: 70 },
+      { name: 'CI/CD Pipelines',   level: 70 },
     ],
   },
 ];

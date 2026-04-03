@@ -3,18 +3,32 @@ import { useInView } from '../hooks/useInView';
 
 const education = [
   {
-    period: '2021 – PRESENT', badge: 'CURRENT', current: true,
+    period: '2022 – PRESENT', badge: 'CURRENT', current: true,
     institution: 'University of Ruhuna',
     degree: 'B.Sc. (Hons) in Computer Science',
     desc: 'Focusing on Algorithm Design, Software Engineering, and Advanced Mathematics.',
     modules: ['Algorithm Design', 'Software Engineering', 'Data Structures', 'Advanced Mathematics'],
   },
   {
-    period: 'COMPLETED', badge: 'COMPLETED', current: false,
+    period: '2021 – PRESENT', badge: 'CURRENT', current: true,
     institution: 'Open University of Sri Lanka',
-    degree: 'Advanced Certificate in Science',
-    desc: 'Foundational studies in Computing and Applied Sciences.',
-    modules: ['Computing Fundamentals', 'Applied Sciences', 'System Analysis'],
+    degree: 'Bsc. in Civil Engineering',
+    desc: 'Foundational studies in Civil Engineering.',
+    modules: ['Civil industry', 'Applied Sciences', 'electrical'],
+  },
+  {
+    period: 'COMPLETED', badge: 'COMPLETED', current: false,
+    institution: 'Mahinda Rajapakshe College,Matara.',
+    degree: 'Physical Science in A/L',
+    desc: 'Adavanced studies in Physical Sciences.',
+    modules: ['Mathematics', 'Physics', 'Chemistry'],
+  },
+  {
+    period: 'COMPLETED', badge: 'COMPLETED', current: false,
+    institution: 'Institute of Technology University of Moratuwa',
+    degree: 'Web Design Program',
+    desc: 'Program covering HTML, CSS, and JavaScript fundamentals.',
+    modules: ['HTML', 'CSS', 'JavaScript'],
   },
 ];
 
