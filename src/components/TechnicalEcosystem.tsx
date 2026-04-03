@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './components.css';
 import { useInView } from '../hooks/useInView';
 
@@ -7,7 +7,7 @@ const cats = [
     icon: '</>',
     label: 'Languages',
     items: [
-      { name: 'Python',     level: 700 },
+      { name: 'Python',     level: 100 },
       { name: 'JavaScript', level: 88 },
       { name: 'TypeScript', level: 80 },
       { name: 'Go',         level: 65 },
@@ -52,6 +52,14 @@ const cats = [
 export default function TechnicalEcosystem() {
   const { ref, visible } = useInView();
   const [active, setActive] = useState(0);
+  const barRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    barRefs.current.forEach((bar, i) => {
+      if (!bar) return;
+      bar.style.width = visible ? `${cats[active].items[i]?.level ?? 0}%` : '0%';
+    });
+  }, [visible, active]);
 
   return (
     <section id="skills" className="tech-section" ref={ref as React.RefObject<HTMLElement>}>
@@ -86,7 +94,7 @@ export default function TechnicalEcosystem() {
                     <span className="tech-skill-pct">{item.level}%</span>
                   </div>
                   <div className="tech-skill-track">
-                    <div className="tech-skill-bar" style={{ width: visible ? `${item.level}%` : '0%' }} />
+                    <div className="tech-skill-bar" ref={el => { barRefs.current[i] = el; }} />
                   </div>
                 </div>
               ))}

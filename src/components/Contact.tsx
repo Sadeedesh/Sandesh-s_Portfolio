@@ -1,6 +1,7 @@
 import './components.css';
 import { useInView } from '../hooks/useInView';
 
+
 export default function Contact() {
   const { ref, visible } = useInView();
   return (
