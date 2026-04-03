@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './components.css';
 
 const links = [
-  { label: 'ABOUT',     href: '#about' },
+  { label: 'CERTIFICATE',     href: '#about' },
   { label: 'EDUCATION', href: '#education' },
   { label: 'PROJECTS',  href: '#projects' },
   { label: 'SKILLS',    href: '#skills' },
